@@ -9,7 +9,9 @@
 ## 1. Project Metadata
 
 * Owner: Kevin
+
 * Source of truth: `vinzicc/ai-production-readiness/PROJECT_STATE.md`
+
 * Repository visibility: Public — change to Private before storing client-sensitive material
 
 * Commitment period: 2026-06-30 to 2027-06-30
@@ -263,9 +265,14 @@ Problem evidence exists, but Kevin’s offer is not validated.
 ## 9. Current Assets
 
 * AI development tooling: Hermes connected to Codex and Mistral
+
 * Intended use: implementation, independent review, test generation, and patch critique
+
 * Tooling status: Available, but workflow and verification standard are not yet validated
-* Vulnerable demo app: Not started
+
+* Vulnerable demo app specification: Completed in `demo-app/SPEC.md`
+
+* Vulnerable demo app implementation: Not started
 
 * Audit checklist: Not started
 
@@ -337,7 +344,7 @@ Problem evidence exists, but Kevin’s offer is not validated.
 
 1. Technical review methodology has not been built.
 
-2. No vulnerable demo app exists.
+2. Vulnerable demo app implementation has not started.
 
 3. No sample deliverable exists.
 
@@ -351,53 +358,65 @@ Problem evidence exists, but Kevin’s offer is not validated.
 
 ## 12. Current Priority
 
-Build delivery capability before aggressive outreach.
+Build the vulnerable demo application from the completed specification before aggressive outreach.
 
 Current work order:
 
-1. Define the minimum technical knowledge required.
+1. Create the application skeleton and baseline infrastructure.
 
-2. Build one deliberately vulnerable demo application.
+2. Implement authentication and profile creation.
 
-3. Audit the application manually.
+3. Implement private project CRUD.
 
-4. Verify every finding.
+4. Implement mock AI generation and usage tracking.
 
-5. Repair the problems.
+5. Implement Stripe test-mode checkout and webhook handling.
 
-6. Convert the process into a checklist.
+6. Implement the minimal admin route.
 
-7. Produce a professional sample report.
+7. Introduce the ten intentional vulnerabilities one at a time.
 
-8. Use the proof to begin targeted outreach.
+8. Freeze the vulnerable baseline.
+
+9. Audit, reproduce, repair, and verify every confirmed finding.
+
+10. Convert verified evidence into a checklist and sample report.
 
 ## 13. Immediate Next Action
 
-Define the vulnerable demo app specification.
+Create the application skeleton and baseline infrastructure defined in `demo-app/SPEC.md`.
 
-The specification must include:
+Required output:
 
-* stack;
+* Next.js App Router project;
 
-* basic product concept;
+* TypeScript strict mode;
 
-* user roles;
+* lint, typecheck, and test commands;
 
-* database structure;
+* environment example containing placeholders only;
 
-* payment flow;
+* initial folder structure;
 
-* AI feature;
+* health page;
 
-* intentional vulnerabilities;
+* setup and verification instructions.
 
-* expected secure behavior;
-
-* testing criteria.
+Do not implement authentication, payments, AI generation, admin behavior, or intentional vulnerabilities in this first task.
 
 Definition of done:
 
-A written specification exists that is narrow enough to build without adding unnecessary features.
+* local development starts successfully;
+
+* typecheck passes;
+
+* lint passes;
+
+* one smoke test passes;
+
+* no real secret is committed;
+
+* README contains the exact setup and verification commands.
 
 ## 14. Stage-Gate Criteria
 
@@ -481,6 +500,18 @@ Avoid copying trends and avoid changing industries whenever an initial tactic fa
 
 Status: Active
 
+### 2026-06-29
+
+Decision:
+
+Use PromptDesk as the deliberately vulnerable demo application, with Next.js, Supabase, Stripe test mode, a mocked AI provider, and ten controlled vulnerabilities.
+
+Reason:
+
+It covers the highest-value launch risks—authorization, data isolation, payment integrity, API abuse, input validation, error disclosure, and privileged access—without expanding into an unnecessary product build.
+
+Status: Active
+
 ## 16. Assumptions to Test
 
 * Founders fear launching fragile AI-built apps.
@@ -550,8 +581,17 @@ Do not execute these during the current commitment unless they directly strength
 ### 2026-06-29
 
 * Migrated `PROJECT_STATE.md` to GitHub as the operational source of truth.
+
 * Documented Hermes, Codex, and Mistral as available development and review tooling.
+
+* Completed `demo-app/SPEC.md` for PromptDesk.
+
+* Defined ten controlled vulnerabilities, secure invariants, proof requirements, and the build sequence.
+
+* Advanced the immediate next action from specification to application skeleton.
+
 * Repository currently public; client-sensitive material must not be stored until visibility is changed to private.
+
 * Initial project state created.
 
 * Stage set to capability, proof, and first paid review.
