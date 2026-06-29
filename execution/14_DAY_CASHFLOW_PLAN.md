@@ -1,8 +1,8 @@
-# 14-Day Cashflow Validation Plan
+# 14-Day Global Cashflow Validation Plan
 
 ## Objective
 
-Secure the first paid deposit by **2026-07-13** and complete the first legitimate paid project by **2026-07-29**, while staying inside the AI Production Readiness industry.
+Secure the first **US$75 paid deposit by 2026-07-13** and complete the first legitimate paid project by **2026-07-29**, while staying inside the AI Production Readiness industry.
 
 The 12-month commitment prevents impulsive industry switching. It does not justify delaying revenue.
 
@@ -12,34 +12,65 @@ The 12-month commitment prevents impulsive industry switching. It does not justi
 - No deposits received.
 - No repository submissions.
 - No technical buyer conversations.
-- No sample report or testimonial.
+- No English sample report or testimonial.
+- No verified international payment workflow.
 - PromptDesk specification exists, but implementation has not started.
 
 Therefore, a broad production-readiness review is too difficult to trust and deliver as the only entry offer.
 
+## Target Market
+
+Primary market:
+
+- global, English-speaking founders and small SaaS teams.
+
+Initial narrow buyer:
+
+- Next.js or React with TypeScript;
+- Supabase as the preferred initial backend;
+- deployed or preparing to deploy on Vercel;
+- launch expected within 30 days;
+- authentication, customer data, Stripe, or an AI feature already implemented;
+- willing to provide controlled repository access or a screen-share.
+
+Priority regions:
+
+1. United States and Canada
+2. United Kingdom and Western Europe
+3. Australia and New Zealand
+4. English-speaking founders in other regions
+
+The market is global. The offer is not broad. Narrowness is required because trust and proof are currently weak.
+
 ## Service Ladder
 
-### Entry A — 48-Hour AI App Launch Blocker Check
+### Entry A — 48-Hour AI-Built SaaS Launch Blocker Check
 
 For a founder who is preparing to launch but does not know the main technical risk.
+
+Positioning:
+
+> Find launch-blocking security and reliability issues before real users, customer data, or payments are exposed.
 
 Scope:
 
 - one repository;
-- one deployment or local reproduction environment;
-- Next.js / React / TypeScript;
-- Supabase or Firebase;
-- optional Stripe or AI API flow;
-- maximum three verified findings.
+- one deployment or controlled reproduction environment;
+- one Supabase database where applicable;
+- Next.js or React with TypeScript;
+- approximately 10,000 lines of code or less;
+- maximum three verified findings;
+- fixed exclusions;
+- the 48-hour clock begins only after deposit, intake, access, and scope confirmation.
 
 Deliverables:
 
-- concise findings summary;
+- concise English findings summary;
 - evidence or reproduction steps;
 - severity and business impact;
 - limited verdict: Proceed, Proceed with Caution, or Stop;
 - prioritized next action;
-- short walkthrough video.
+- short English walkthrough video.
 
 Boundaries:
 
@@ -49,11 +80,12 @@ Boundaries:
 - no guarantee that every vulnerability is found;
 - never claim that an application is fully secure.
 
-Validation price:
+Founding validation price:
 
-- Rp750,000;
-- 50% deposit before work starts;
-- final payment before the complete report and walkthrough are delivered.
+- US$150 fixed price;
+- US$75 deposit before work starts;
+- US$75 final payment before the complete report and walkthrough are delivered;
+- limited to the first three completed founding clients.
 
 ### Entry B — 48-Hour Launch Blocker Fix Sprint
 
@@ -65,7 +97,7 @@ Examples:
 - Stripe webhook or entitlement mismatch;
 - Vercel deployment failure;
 - authentication flow failure;
-- AI endpoint cost, quota, validation, or error-handling problem.
+- AI endpoint cost, quota, validation, fallback, or error-handling problem.
 
 Deliverables:
 
@@ -75,9 +107,9 @@ Deliverables:
 - regression test when practical;
 - changed-file summary.
 
-Validation price:
+Founding validation price:
 
-- starts at Rp1,000,000;
+- starts at US$500;
 - 50% deposit before work starts;
 - final quote depends on confirmed scope.
 
@@ -90,7 +122,7 @@ Build two focused proof cases:
 1. Supabase RLS failure: User B can read User A's project, followed by the policy fix and regression test.
 2. Stripe webhook failure: forged or duplicate test event changes entitlement, followed by signature verification or idempotency fix.
 
-Minimum sales assets:
+Minimum English-language sales assets:
 
 - one concise sample finding;
 - one before-and-after test;
@@ -98,39 +130,59 @@ Minimum sales assets:
 - one simple offer page;
 - one clear disclaimer and scope boundary.
 
+The first proof case is sufficient to begin outreach. The second proof case must not delay selling.
+
+## Payment and Access Readiness
+
+Before taking a deposit:
+
+- verify one international payment method that can receive USD;
+- prepare a simple USD invoice;
+- document when the 48-hour clock begins;
+- prepare a short scope and authorization statement;
+- prefer read-only or least-privilege repository access;
+- use a controlled reproduction environment whenever possible;
+- never request credentials through plain chat;
+- do not store client-sensitive material in the public project repository.
+
 ## 14-Day Execution
 
 ### Days 1–2: Proof Case One
+
+Deadline: **2026-07-02 23:59 Asia/Jakarta**
 
 - Build the smallest RLS reproduction.
 - Demonstrate cross-user access.
 - Apply the secure policy.
 - Add a regression test.
-- Write a one-page sample finding.
-- Record a short walkthrough.
+- Write a one-page English sample finding.
+- Record a short English walkthrough.
 
 Definition of done:
 
 - failure reproduced;
 - fix verified;
 - intended user flow still works;
+- business impact explained clearly;
 - Kevin understands the root cause and can explain it without AI assistance.
 
-### Day 3: Offer Assets
+### Day 3: Offer and Payment Assets
 
-- Publish a simple offer page or README.
-- Prepare one message for founders approaching launch.
-- Prepare one message for founders with a known blocker.
-- Create a prospect tracker.
+- Publish a simple English offer page or README.
+- Prepare one English message for founders approaching launch.
+- Prepare one English message for founders with a known blocker.
+- Create a global prospect tracker.
+- Verify the international payment and USD invoicing workflow.
+- Prepare the repository-access and authorization process.
 
 Do not build branding, a complex website, or an automated sales system.
 
-### Days 4–10: Trigger-Based Selling
+### Days 4–10: Trigger-Based Global Selling
 
 Daily minimum:
 
-- find 10 qualified prospects;
-- send personalized messages based on a real trigger;
+- find 10 qualified global prospects;
+- send personalized English messages based on a real trigger;
 - follow up previous prospects;
 - offer a short technical conversation or screen-share;
 - record objections and funnel stage.
@@ -138,20 +190,31 @@ Daily minimum:
 Triggers:
 
 - upcoming launch;
+- recently opened beta access;
 - recently added authentication or payments;
 - Supabase or Stripe help request;
 - failed deployment;
 - public production bug;
 - request for a technical cofounder or engineer;
-- AI feature recently released.
+- AI feature recently released;
+- concern about AI-generated code quality.
+
+Prospecting sources may include:
+
+- Product Hunt upcoming or recent launches;
+- X build-in-public posts;
+- Indie Hackers;
+- relevant Reddit communities;
+- GitHub projects with visible launch activity;
+- founder and SaaS communities.
 
 Cumulative target:
 
-- 50 qualified prospects;
+- 50 qualified global prospects;
 - two follow-ups where appropriate;
 - five to eight real technical conversations;
 - at least one repository or screen-share review;
-- one paid deposit.
+- one US$75 paid deposit.
 
 ### Days 11–14: Close and Deliver
 
@@ -159,7 +222,8 @@ Cumulative target:
 - reproduce the issue before promising a fix;
 - define acceptance criteria in writing;
 - collect the deposit;
-- deliver verified output;
+- confirm intake and access before starting the 48-hour clock;
+- deliver verified output in clear English;
 - offer remediation when the initial job is diagnostic;
 - request a testimonial after successful delivery.
 
@@ -202,9 +266,9 @@ Reject or defer when:
 
 ## Funnel Diagnosis
 
-After 50 qualified prospects, two follow-ups, and at least five real conversations:
+After 50 qualified global prospects, two follow-ups, and at least five real conversations:
 
-- no replies: message or channel problem;
+- no replies: message, channel, or prospect-selection problem;
 - replies but no calls: weak urgency or unclear offer;
 - calls but no repository access: trust or access-risk problem;
 - repository access but no deposit: pricing, proof, or risk-reversal problem;
@@ -212,14 +276,19 @@ After 50 qualified prospects, two follow-ups, and at least five real conversatio
 
 Do not change industry before identifying the failed funnel stage.
 
+Do not continue the same message and channel unchanged after the threshold is met.
+
 ## Main Failure Cases
 
 1. Building PromptDesk becomes avoidance of selling.
 2. The review scope is broader than Kevin can verify.
 3. Outreach uses speculative fear instead of observed evidence.
-4. Cheap pricing attracts uncontrolled scope.
-5. AI-generated findings are reported without reproduction.
-6. Family survival depends entirely on an unvalidated offer.
+4. The US$150 price still fails to create trust because proof is weak.
+5. Global targeting becomes generic mass outreach.
+6. English communication is vague or overloaded with jargon.
+7. Repository access is requested without a credible safety process.
+8. AI-generated findings are reported without reproduction.
+9. Family survival depends entirely on an unvalidated offer.
 
 ## Safeguards
 
@@ -230,17 +299,20 @@ Do not change industry before identifying the failed funnel stage.
 - no production changes without explicit authorization;
 - 50% deposit;
 - written scope and acceptance criteria;
+- controlled access process;
+- founding price limited to three completed clients;
 - parallel bridge-income lane until business revenue is dependable.
 
 ## Success Criteria
 
 By 2026-07-13:
 
-- minimum proof published;
-- at least 50 qualified prospects contacted;
+- minimum proof published in English;
+- international payment method verified;
+- at least 50 qualified global prospects contacted;
 - at least five real technical conversations;
 - at least one repository or screen-share review;
-- at least one paid deposit.
+- at least one US$75 paid deposit.
 
 By 2026-07-29:
 
