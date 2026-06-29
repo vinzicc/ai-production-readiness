@@ -9,21 +9,12 @@
 ## 1. Project Metadata
 
 * Owner: Kevin
-
 * Source of truth: `vinzicc/ai-production-readiness/PROJECT_STATE.md`
-
 * Repository visibility: Public — change to Private before storing client-sensitive material
-
-* Commitment period: 2026-06-30 to 2027-06-30
-
-* Current stage: Stage 0 — Capability, proof, and first paid review
-
+* Strategic focus period: 2026-06-30 to 2027-06-30
+* Current stage: Stage 0 — 14-day cashflow validation and minimum proof
 * Status: Active
-
-* Primary objective: obtain one legitimate completed paid review
-
-* First-payment target: 2026-07-29
-
+* Primary objective: obtain a paid deposit by 2026-07-13 and complete one legitimate paid project by 2026-07-29
 * Target type: aggressive operational target, not a guarantee
 
 ## 2. North Star
@@ -32,164 +23,148 @@ Build a durable AI-native business that helps founders make AI-built application
 
 Short-term goal:
 
-* generate legitimate cashflow through a productized technical service.
+* generate legitimate cashflow through narrow, fixed-scope technical services.
 
 Long-term goal:
 
 * convert repeated checks, fixes, and failure data into recurring assurance software.
 
+Strategic rule:
+
+* the 12-month commitment prevents impulsive industry switching;
+* it does not justify delaying revenue.
+
 ## 3. Fixed Thesis
 
 * Industry: AI software development
-
 * Core problem: AI-built apps become functional faster than they become production-ready
-
 * Initial buyers:
-
   * solo founders;
-
   * indie hackers;
-
   * AI development agencies;
-
   * small product teams.
-
 * Initial outcome:
-
   * reduce security risk;
-
   * reduce reliability risk;
-
   * detect launch blockers;
-
   * improve production readiness.
-
 * Initial business model:
-
-  * fixed-scope technical review;
-
-  * limited remediation;
-
-  * optional recurring maintenance.
-
+  * fixed-scope launch-blocker check;
+  * narrow remediation sprint;
+  * later recurring maintenance.
 * Long-term direction:
-
   * continuous checks;
-
   * repository monitoring;
-
   * pre-deployment assurance;
-
   * human-verified automated findings.
 
 ## 4. Current Buyer Hypothesis
 
 Primary buyer:
 
-Solo founder or small team that has built a SaaS application using AI coding tools and is preparing to launch, accept users, or connect payments.
+Solo founder or small team that has built a SaaS application using AI coding tools and is preparing to launch, accept users, connect payments, or resolve a specific production blocker.
 
 Relevant trigger events:
 
 * announcing an upcoming launch;
-
 * connecting Stripe;
-
 * adding authentication;
-
 * moving from prototype to production;
-
 * asking whether Supabase or Firebase is secure;
-
 * seeking a technical cofounder;
-
 * experiencing unexpected production errors;
-
-* preparing for real customer data.
+* preparing for real customer data;
+* reporting a failed deployment, auth problem, payment mismatch, or AI endpoint issue.
 
 Buyer hypothesis status: Unvalidated
 
-## 5. Current Offer
+## 5. Current Offers
 
-### Name
+### Offer A — 48-Hour AI App Launch Blocker Check
 
-AI-Built App Launch Readiness Review
+Use when the buyer is approaching launch but does not know the main technical risk.
 
-### Scope
+Scope:
 
 * one repository;
-
-* one deployment;
-
-* one database;
-
-* approximately 10,000 lines of code or less;
-
+* one deployment or controlled reproduction environment;
 * supported modern web stack;
-
-* fixed checklist;
-
+* maximum three verified findings;
 * fixed exclusions.
 
-### Deliverables
+Review areas may include:
 
-* severity-ranked findings;
+* authentication and authorization;
+* Supabase RLS or database permissions;
+* exposed secrets;
+* Stripe webhook and entitlement flow;
+* deployment and one critical user flow;
+* AI endpoint quota, validation, or error handling.
 
-* supporting evidence;
+Deliverables:
 
-* reproduction steps;
+* concise severity-ranked findings;
+* supporting evidence or reproduction steps;
+* limited verdict: Proceed, Proceed with Caution, or Stop;
+* prioritized next action;
+* short walkthrough video.
 
-* launch verdict;
+Validation price:
 
-* prioritized remediation plan;
+* Rp750,000;
+* 50% deposit before work starts;
+* final payment before complete report and walkthrough delivery.
 
-* short video walkthrough;
+### Offer B — 48-Hour Launch Blocker Fix Sprint
 
-* limited Critical or High patches when purchased.
+Use when the buyer already has one specific blocker.
 
-### Initial Price Hypotheses
+Scope:
 
-* Review only: Rp1,500,000
+* one defined problem;
+* one supported stack;
+* one scoped fix;
+* explicit acceptance criteria.
 
-* Review with limited critical fixes: Rp3,000,000
+Deliverables:
 
-* Maintenance: Rp1,000,000–Rp2,000,000 per month
+* reproduced issue;
+* scoped fix;
+* before-and-after evidence;
+* regression test when practical;
+* changed-file summary.
 
-Pricing status: Unvalidated
+Validation price:
+
+* starts at Rp1,000,000;
+* 50% deposit before work starts;
+* final quote depends on confirmed scope.
 
 ### Important Boundaries
 
-This service is not:
+These services are not:
 
-* a formal penetration test;
-
-* a compliance certification;
-
-* a guarantee that no vulnerability exists;
-
+* formal penetration tests;
+* compliance certifications;
+* exhaustive security reviews;
+* guarantees that no vulnerability exists;
 * suitable for high-risk regulated systems during the initial stage.
+
+Do not claim an application is fully secure.
 
 ## 6. Supported Stack
 
 Initial focus:
 
 * Next.js
-
 * React
-
 * TypeScript
-
 * Supabase
-
 * Firebase
-
 * Vercel
-
 * Stripe
-
 * OpenAI API
-
 * Anthropic API
-
 * GitHub
 
 Stack status: Initial hypothesis; narrow further after real repository evidence
@@ -197,41 +172,23 @@ Stack status: Initial hypothesis; narrow further after real repository evidence
 ## 7. Initial Review Areas
 
 * Authentication
-
 * Authorization
-
 * User roles
-
 * Supabase RLS
-
 * Database permissions
-
 * Secrets and environment variables
-
 * Public API routes
-
 * Input validation
-
 * CORS
-
 * Rate limiting
-
 * Stripe and webhook verification
-
 * Dependency risks
-
 * Deployment configuration
-
 * Error handling
-
 * Logging
-
 * Monitoring
-
 * Critical user-flow tests
-
 * AI-output validation
-
 * AI-feature fallback behavior
 
 ## 8. Current Evidence
@@ -239,57 +196,40 @@ Stack status: Initial hypothesis; narrow further after real repository evidence
 ### Stronger Evidence
 
 * AI-assisted software creation is growing.
-
 * Developers report trust and debugging concerns around AI-generated output.
-
 * Existing providers sell AI-built app production-readiness and security-review services.
-
 * Major developer-security companies are building products around AI-generated code assurance.
 
 ### Missing Evidence
 
 * Kevin has not received a repository submission.
-
 * Kevin has not completed a technical buyer conversation for this offer.
-
 * Kevin has not received a deposit.
-
-* Kevin has not completed a paid review.
-
+* Kevin has not completed a paid project.
 * Kevin has no case study or testimonial in this niche.
 
 Market status:
 
-Problem evidence exists, but Kevin’s offer is not validated.
+Problem evidence exists, but Kevin’s offers and willingness to pay remain unvalidated.
 
 ## 9. Current Assets
 
 * AI development tooling: Hermes connected to Codex and Mistral
-
 * Intended use: implementation, independent review, test generation, and patch critique
-
 * Tooling status: Available, but workflow and verification standard are not yet validated
-
 * Vulnerable demo app specification: Completed in `demo-app/SPEC.md`
-
-* Vulnerable demo app implementation: Not started
-
-* Audit checklist: Not started
-
-* Sample report: Not started
-
+* 14-day cashflow plan: Completed in `execution/14_DAY_CASHFLOW_PLAN.md`
+* Minimum proof case 1 — Supabase RLS: Not started
+* Minimum proof case 2 — Stripe webhook: Not started
+* Full PromptDesk implementation: Deferred until it no longer delays selling
+* Sample finding: Not started
 * Technical walkthrough: Not started
-
 * Offer page: Not started
-
+* Prospect tracker: Not started
 * Prospect list: Not started
-
 * Case study: None
-
 * Testimonials: None
-
 * Internal scanner: None
-
 * Recurring clients: None
 
 ## 10. Metrics
@@ -297,178 +237,195 @@ Problem evidence exists, but Kevin’s offer is not validated.
 ### Acquisition
 
 * Qualified prospects contacted: 0
-
 * Trigger-based messages sent: 0
-
+* Follow-ups sent: 0
 * Positive replies: 0
-
 * Technical conversations: 0
-
+* Repository or screen-share reviews: 0
 * Repository submissions: 0
 
 ### Revenue
 
 * Deposits: 0
-
-* Paid reviews: 0
-
-* Completed paid reviews: 0
-
+* Paid checks: 0
+* Paid fix sprints: 0
+* Completed paid projects: 0
 * Total revenue: Rp0
-
 * Monthly recurring revenue: Rp0
 
 ### Delivery
 
 * Reviews delivered: 0
-
+* Fix sprints delivered: 0
 * Average delivery time: N/A
-
-* Critical findings verified: 0
-
+* Verified findings: 0
 * False positives recorded: 0
-
 * Critical fixes completed: 0
 
 ### Proof
 
+* Minimum proof cases completed: 0
 * Testimonials: 0
-
 * Case studies: 0
-
 * Referrals: 0
-
 * Repeat customers: 0
 
 ## 11. Current Blockers
 
-1. Technical review methodology has not been built.
-
-2. Vulnerable demo app implementation has not started.
-
-3. No sample deliverable exists.
-
-4. No proof of technical competence exists.
-
-5. No qualified prospect pipeline exists.
-
-6. Buyer willingness to pay is still unknown.
-
-7. Kevin needs a reliable method to evaluate AI-generated technical output.
+1. No minimum proof case exists.
+2. No sample finding or walkthrough exists.
+3. No qualified prospect pipeline exists.
+4. Buyer willingness to pay is unknown.
+5. Kevin has not yet demonstrated a repeatable delivery method.
+6. Kevin needs a reliable method to evaluate AI-generated technical output.
+7. Family cashflow cannot depend entirely on an unvalidated offer.
 
 ## 12. Current Priority
 
-Build the vulnerable demo application from the completed specification before aggressive outreach.
+Secure cashflow without leaving the AI Production Readiness industry.
 
-Current work order:
+Parallel work order:
 
-1. Create the application skeleton and baseline infrastructure.
+1. Build one minimum RLS proof case.
+2. Convert it into a sample finding and five-minute walkthrough.
+3. Publish a simple offer page and prospect tracker.
+4. Begin trigger-based outreach immediately after the minimum proof exists.
+5. Maintain a bridge-income lane until project revenue becomes dependable.
+6. Accept only tightly scoped work within verified capability.
+7. Use real delivery evidence to improve the checklist and PromptDesk.
 
-2. Implement authentication and profile creation.
+Daily allocation until revenue becomes dependable:
 
-3. Implement private project CRUD.
-
-4. Implement mock AI generation and usage tracking.
-
-5. Implement Stripe test-mode checkout and webhook handling.
-
-6. Implement the minimal admin route.
-
-7. Introduce the ten intentional vulnerabilities one at a time.
-
-8. Freeze the vulnerable baseline.
-
-9. Audit, reproduce, repair, and verify every confirmed finding.
-
-10. Convert verified evidence into a checklist and sample report.
+* 60% prospecting, applications, and paid work;
+* 30% technical proof and delivery capability;
+* 10% research and administration.
 
 ## 13. Immediate Next Action
 
-Create the application skeleton and baseline infrastructure defined in `demo-app/SPEC.md`.
+Build minimum proof case one: Supabase RLS cross-user data access.
 
-Required output:
+Required result:
 
-* Next.js App Router project;
+* User A owns a project record;
+* User B can read User A’s project under the intentionally weak policy;
+* the failure is reproduced in a controlled environment;
+* the RLS policy is corrected;
+* the same attempt fails after the fix;
+* User A can still access the intended record;
+* a regression test or repeatable script exists;
+* Kevin can explain the root cause without relying on AI output.
 
-* TypeScript strict mode;
+After verification:
 
-* lint, typecheck, and test commands;
+* write one concise sample finding;
+* record a walkthrough of no more than five minutes;
+* create the simple offer page;
+* begin outreach.
 
-* environment example containing placeholders only;
+Do not build the full PromptDesk application before this proof and outreach step.
 
-* initial folder structure;
+## 14. Fourteen-Day Targets
 
-* health page;
+By 2026-07-13:
 
-* setup and verification instructions.
+* one verified RLS proof case;
+* one sample finding;
+* one short walkthrough;
+* one simple offer page;
+* at least 50 qualified prospects contacted;
+* at least five real technical conversations;
+* at least one repository or screen-share review;
+* at least one paid deposit.
 
-Do not implement authentication, payments, AI generation, admin behavior, or intentional vulnerabilities in this first task.
+By 2026-07-29:
 
-Definition of done:
+* one legitimate paid project completed;
+* payment collected in full;
+* delivery evidence documented;
+* one testimonial requested;
+* offer adjusted using observed objections and delivery data.
 
-* local development starts successfully;
+## 15. Funnel Diagnosis and Kill Criteria
 
-* typecheck passes;
+After 50 qualified prospects, two follow-ups where appropriate, and at least five real conversations:
 
-* lint passes;
+* no replies: change message or channel;
+* replies but no calls: improve urgency or offer clarity;
+* calls but no repository access: improve trust and access safety;
+* repository access but no deposit: change proof, price, scope, or risk reversal;
+* deposit but delivery failure: narrow scope and strengthen capability.
 
-* one smoke test passes;
+Do not change industry before identifying the failed funnel stage.
 
-* no real secret is committed;
+Do not continue the same message and channel unchanged after the threshold is met.
 
-* README contains the exact setup and verification commands.
+## 16. Qualification and Safety Rules
 
-## 14. Stage-Gate Criteria
+Accept a project only when:
 
-### Stage 0 to Stage 1
+* the stack is supported;
+* the problem can be reproduced or investigated safely;
+* expected output is explicit;
+* access can be provided without unsafe credential handling;
+* the client accepts the service boundaries;
+* the deposit is paid.
+
+Reject or defer when:
+
+* the system is high-risk regulated software;
+* the client requests unauthorized security testing;
+* the problem requires expertise Kevin cannot verify;
+* production access is unsafe or uncontrolled;
+* scope cannot fit the promised delivery window.
+
+## 17. Stage-Gate Criteria
+
+### Cashflow Validation Gate
 
 Required:
 
-* vulnerable demo app completed;
+* 50 qualified prospects;
+* at least five technical conversations;
+* one repository or screen-share review;
+* one deposit or clear funnel diagnosis.
 
-* vulnerabilities reproduced;
-
-* fixes verified;
-
-* checklist completed;
-
-* sample report completed;
-
-* walkthrough recorded.
-
-### Stage 1 to Stage 2
+### First Delivery Gate
 
 Required:
 
-* qualified prospect list;
+* one paid project completed;
+* payment collected;
+* findings or fixes verified;
+* scope and delivery time documented;
+* testimonial requested.
 
-* clear offer page;
+### Service Standardization Gate
 
-* at least five technical conversations or repository submissions;
+Required:
 
-* first deposit or strong evidence requiring offer adjustment.
+* at least five completed paid projects;
+* repeated failure patterns;
+* delivery checklist based on real evidence;
+* known false-positive patterns;
+* evidence of willingness to pay for recurring checks.
 
 ### Service to Productization
 
 Do not begin external SaaS productization before:
 
-* at least five completed paid reviews;
-
+* at least five completed paid projects;
 * repeated failure patterns;
-
 * evidence that checks are deterministic;
-
 * evidence that buyers value recurring detection;
-
 * a clear reason existing tools do not fully solve the problem.
 
-## 15. Decision Log
+## 18. Decision Log
 
 ### 2026-06-29
 
 Decision:
 
-Commit to AI-Built App Production Readiness as the core 12-month game.
+Commit to AI-Built App Production Readiness as the core 12-month strategic focus.
 
 Reason:
 
@@ -492,11 +449,11 @@ Status: Active
 
 Decision:
 
-Use first-principles thinking and evidence-based adaptation.
+Use first-principles thinking, reverse thinking, and evidence-based adaptation.
 
 Reason:
 
-Avoid copying trends and avoid changing industries whenever an initial tactic fails.
+Avoid copying trends, overclaiming expertise, or changing industries whenever an initial tactic fails.
 
 Status: Active
 
@@ -504,96 +461,93 @@ Status: Active
 
 Decision:
 
-Use PromptDesk as the deliberately vulnerable demo application, with Next.js, Supabase, Stripe test mode, a mocked AI provider, and ten controlled vulnerabilities.
+Use PromptDesk as a proof laboratory, not as a prerequisite for starting outreach.
 
 Reason:
 
-It covers the highest-value launch risks—authorization, data isolation, payment integrity, API abuse, input validation, error disclosure, and privileged access—without expanding into an unnecessary product build.
+A full demo build would delay revenue. Minimum verified proof is sufficient to begin cashflow validation.
 
 Status: Active
 
-## 16. Assumptions to Test
+### 2026-06-29
+
+Decision:
+
+Adopt a two-entry service ladder: Launch Blocker Check for uncertain risk and Launch Blocker Fix Sprint for a known problem.
+
+Reason:
+
+It combines low-friction diagnosis with a more direct result-based service while keeping scope narrow enough for Kevin’s current proof level.
+
+Status: Active
+
+### 2026-06-29
+
+Decision:
+
+Run a 14-day cashflow validation period with a parallel bridge-income lane.
+
+Reason:
+
+Family cashflow is urgent, and an unvalidated business offer cannot be the sole protection against zero household income.
+
+Status: Active
+
+## 19. Assumptions to Test
 
 * Founders fear launching fragile AI-built apps.
-
-* They understand the value of production-readiness review.
-
-* They will grant safe repository access.
-
-* They are willing to pay at least Rp1,500,000.
-
-* A review can be delivered within 72 hours.
-
-* The initial stack produces repeated failure patterns.
-
+* Triggered founders understand the value of a narrow blocker check.
+* They will grant safe repository or screen-share access.
+* They are willing to pay Rp750,000 for a limited check.
+* Buyers with a known blocker will pay at least Rp1,000,000 for a scoped fix.
+* A narrow check or fix can be delivered within 48 hours.
+* The supported stack produces repeated failure patterns.
 * Some findings can later be automated.
-
 * Agencies may become a stronger buyer than solo founders.
 
-## 17. After June 2027 Parking Lot
+## 20. After June 2027 Parking Lot
 
 Do not execute these during the current commitment unless they directly strengthen the core project:
 
 * AI trading bots
-
 * Generic AI automation agency
-
 * GEO services
-
 * Lead scraping
-
 * Reconciliation business
-
 * Social-media agency
-
 * Unrelated SaaS ideas
-
 * General-purpose agent platform
-
 * Crypto as the primary business
 
-## 18. Weekly Review Template
+## 21. Weekly Review Template
 
 * Week ending:
-
 * Main objective:
-
 * What was completed:
-
 * What was not completed:
-
 * Technical evidence collected:
-
 * Market evidence collected:
-
+* Qualified prospects contacted:
+* Technical conversations:
+* Repository or screen-share reviews:
+* Deposits:
 * Revenue generated:
-
 * Main blocker:
-
+* Funnel stage failing:
 * Decision made:
-
 * Priority for next week:
-
 * PROJECT_STATE sections that need updating:
 
-## 19. Changelog
+## 22. Changelog
 
 ### 2026-06-29
 
 * Migrated `PROJECT_STATE.md` to GitHub as the operational source of truth.
-
 * Documented Hermes, Codex, and Mistral as available development and review tooling.
-
 * Completed `demo-app/SPEC.md` for PromptDesk.
-
-* Defined ten controlled vulnerabilities, secure invariants, proof requirements, and the build sequence.
-
-* Advanced the immediate next action from specification to application skeleton.
-
+* Added `execution/14_DAY_CASHFLOW_PLAN.md`.
+* Changed Stage 0 from build-first capability development to 14-day cashflow validation and minimum proof.
+* Replaced the broad initial review with a two-entry service ladder.
+* Deferred full PromptDesk implementation so it cannot delay outreach.
+* Added explicit bridge-income, funnel-diagnosis, qualification, and kill criteria.
 * Repository currently public; client-sensitive material must not be stored until visibility is changed to private.
-
-* Initial project state created.
-
-* Stage set to capability, proof, and first paid review.
-
-* Initial buyer, offer, scope, and validation criteria documented.
